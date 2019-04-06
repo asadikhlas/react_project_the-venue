@@ -11,7 +11,8 @@ class Header extends Component {
     position="fixed"
     style={{
       backgroundColor:'#2f2f2f',
-      bocShad
+      boxShadow:"none",
+      padding:"10px 0px"
     }}
     >
   header
