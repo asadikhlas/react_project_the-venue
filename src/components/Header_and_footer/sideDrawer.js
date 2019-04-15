@@ -12,7 +12,15 @@ import ListItem from '@material-ui/core/ListItem';
    onClose={()=>props.onClose(false)}
    >
 
-       Drawer
+       <List 
+       component="nav"
+       >
+        <ListItem
+        button onClick={()=>console.log('Featured')}
+        >
+          Events start in
+          </ListItem>
+       </List>
    </Drawer>
   )
 }
