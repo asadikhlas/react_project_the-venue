@@ -31,6 +31,16 @@ import ListItem from '@material-ui/core/ListItem';
         >
           Highlights
           </ListItem>
+          <ListItem
+        button onClick={()=>console.log('Pricing')}
+        >
+        Pricing
+          </ListItem>
+          <ListItem
+        button onClick={()=>console.log('Location')}
+        >
+        Location
+          </ListItem>
        </List>
    </Drawer>
   )
