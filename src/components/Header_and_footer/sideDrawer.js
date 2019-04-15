@@ -1,48 +1,34 @@
-import React from 'react'
-import Drawer from '@material-ui/core/Drawer';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
+import React from "react";
+import Drawer from "@material-ui/core/Drawer";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
 
-
- const SideDrawer = (props) => {
+const SideDrawer = props => {
   return (
-   <Drawer
-   anchor="right"
-   open={props.open}
-   onClose={()=>props.onClose(false)}
-   >
-
-       <List 
-       component="nav"
-       >
-        <ListItem
-        button onClick={()=>console.log('Featured')}
-        >
+    <Drawer
+      anchor="right"
+      open={props.open}
+      onClose={() => props.onClose(false)}
+    >
+      <List component="nav">
+        <ListItem button onClick={() => console.log("Featured")}>
           Events start in
-          </ListItem>
-        
-          <ListItem
-        button onClick={()=>console.log('Venue NFO')}
-        >
+        </ListItem>
+
+        <ListItem button onClick={() => console.log("Venue NFO")}>
           Venue NFO
-          </ListItem>
-          <ListItem
-        button onClick={()=>console.log('Highlights')}
-        >
+        </ListItem>
+        <ListItem button onClick={() => console.log("Highlights")}>
           Highlights
-          </ListItem>
-          <ListItem
-        button onClick={()=>console.log('Pricing')}
-        >
-        Pricing
-          </ListItem>
-          <ListItem
-        button onClick={()=>console.log('Location')}
-        >
-        Location
-          </ListItem>
-       </List>
-   </Drawer>
-  )
-}
+        </ListItem>
+        <ListItem button onClick={() => console.log("Pricing")}>
+          Pricing
+        </ListItem>
+        <ListItem button onClick={() => console.log("Location")}>
+          Location
+        </ListItem>
+      </List>
+    </Drawer>
+  );
+};
 export default SideDrawer;
