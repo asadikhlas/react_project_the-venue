@@ -6,8 +6,16 @@ import IconButton from "@material-ui/core/IconButton";
 import SideDrawer from './sideDrawer';
 
 class Header extends Component {
+  state = {
+    drawerOpen:false
+  }
 
-  
+  toggleDrawer = (value) => {
+    this.setState({
+      drawerOpen:value
+    })
+  }
+
   render() {
     return (
       <AppBar
@@ -27,14 +35,14 @@ class Header extends Component {
         <IconButton
         aria-label="Menu"
         color="inherit"
-        onClick={()=> console.log('open')}
+        onClick={()=> this.toggleDrawer(true)}
         >
           <MenuIcon/>
 
         </IconButton>
         <SideDrawer
         open={this.state.drawerOpen}
-        onClose={}
+        onClose={(value) => this.toggleDrawer(value)}
         />
         </Toolbar>
       </AppBar>

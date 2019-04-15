@@ -8,8 +8,8 @@ import ListItem from '@material-ui/core/ListItem';
   return (
    <Drawer
    anchor="right"
-   open={}
-   onClose={()=>}
+   open={props.open}
+   onClose={()=>props.onClose(false)}
    >
 
        Drawer
