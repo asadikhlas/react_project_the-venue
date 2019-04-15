@@ -3,8 +3,11 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import MenuIcon from "@material-ui/icons/Menu";
 import IconButton from "@material-ui/core/IconButton";
+import SideDrawer from './sideDrawer';
 
 class Header extends Component {
+
+  
   render() {
     return (
       <AppBar
@@ -20,7 +23,7 @@ class Header extends Component {
             <div className="font_righteous header_logo_venue">The Venue</div>
             <div className="header_logo_titles">Musical Events</div>
           </div>
-        </Toolbar>
+       
         <IconButton
         aria-label="Menu"
         color="inherit"
@@ -29,6 +32,11 @@ class Header extends Component {
           <MenuIcon/>
 
         </IconButton>
+        <SideDrawer
+        open={this.state.drawerOpen}
+        onClose={}
+        />
+        </Toolbar>
       </AppBar>
     );
   }
