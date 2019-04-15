@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-import MenuIcon from "@material-ui/core/Menu";
+import MenuIcon from "@material-ui/icons/Menu";
 import IconButton from "@material-ui/core/IconButton";
 
 class Header extends Component {
@@ -21,6 +21,9 @@ class Header extends Component {
             <div className="header_logo_titles">Musical Events</div>
           </div>
         </Toolbar>
+        <IconButton>
+          
+          </IconButton>
       </AppBar>
     );
   }
