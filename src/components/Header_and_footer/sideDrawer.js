@@ -20,6 +20,17 @@ import ListItem from '@material-ui/core/ListItem';
         >
           Events start in
           </ListItem>
+        
+          <ListItem
+        button onClick={()=>console.log('Venue NFO')}
+        >
+          Venue NFO
+          </ListItem>
+          <ListItem
+        button onClick={()=>console.log('Highlights')}
+        >
+          Highlights
+          </ListItem>
        </List>
    </Drawer>
   )
