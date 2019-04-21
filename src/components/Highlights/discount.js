@@ -16,6 +16,12 @@ class Discount extends Component {
       }
   }
 
+  componentDidUpdate(){
+      setTimeout(()=>{
+        this.porcentage()
+      },30)
+  }
+
   render() {
     return (
       <div className="center_wrapper">
