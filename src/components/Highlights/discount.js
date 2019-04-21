@@ -3,13 +3,18 @@ import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
 
 class Discount extends Component {
+    state = {
+        discountStart:0,
+        discountEnd:30
+    }
+    
   render() {
     return (
       <div className="center_wrapper">
         <div className="discount_wrapper">
         <Fade>
         <div className="discount_porcentage">
-            <span>23 %</span>
+            <span>23%</span>
             <span>OFF</span>
           </div>
         </Fade>
