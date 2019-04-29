@@ -1,21 +1,19 @@
 import React from "react";
 import Drawer from "@material-ui/core/Drawer";
 import List from "@material-ui/core/List";
-import {scroller} from 'react-scroll';
+import { scroller } from "react-scroll";
 import ListItem from "@material-ui/core/ListItem";
 
 const SideDrawer = props => {
-
-
-  const scrollToElements = (element ) => {
-    scroller.scrollTo(element,{
-      duration:1500,
-      delay:100,
+  const scrollToElements = element => {
+    scroller.scrollTo(element, {
+      duration: 1500,
+      delay: 100,
       smooth: true,
       offset: -150
-    })
-    props.onClose(false)
-  }
+    });
+    props.onClose(false);
+  };
 
   return (
     <Drawer
@@ -31,7 +29,7 @@ const SideDrawer = props => {
         <ListItem button onClick={() => scrollToElements("venuenfo")}>
           Venue NFO
         </ListItem>
-        <ListItem button onClick={() => scrollToElements('highlights')}>
+        <ListItem button onClick={() => scrollToElements("highlights")}>
           Highlights
         </ListItem>
         <ListItem button onClick={() => scrollToElements("pricing")}>
